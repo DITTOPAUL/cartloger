@@ -1,0 +1,31 @@
+<script>
+
+function remover(page){
+  setTimeout(function() {
+    window.location.href = `/route/${page}`;
+  },100);
+}
+
+
+
+    let icon = document.getElementById('icon');
+    let password = document.getElementById('password');
+
+    icon.onclick = () =>{
+      if(password.type =='password'){
+        password.type = 'text';
+        icon.src = '/assets/Openeyes.png';
+      }else{
+        password.type = 'password';
+        icon.src = '/assets/Closedeyes.png';
+      }
+    }
+
+
+    
+
+
+</script>
+
+</body>
+</html>
